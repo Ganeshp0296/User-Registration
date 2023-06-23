@@ -6,6 +6,7 @@ public class UserRegistration {
         System.out.println(firstName("Ganesh"));
         System.out.println(lastName("Pawar"));
         System.out.println(eMail("Ganesh02@gmail.com"));
+        System.out.println(mobileNum("91 8976668920"));
     }
     // validate first name
     public static boolean firstName( String firstName ) {
@@ -18,5 +19,9 @@ public class UserRegistration {
     //validate Email
     public static boolean eMail(String eMail){
         return eMail.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$");
+    }
+    //validate Mobile Number
+    public static boolean mobileNum(String mobileNum){
+        return mobileNum.matches("(91)[ ][0-9]{10}");
     }
 }
